@@ -82,6 +82,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         if game_state.turn_number < 5:
             self.stall_with_interceptors(game_state)
         else:
+            remove_all()
             # Now let's analyze the enemy base to see where their defenses are concentrated.
             # If they have many units in the front we can build a line for our demolishers to attack them at long range.
             if self.detect_enemy_unit(game_state, unit_type=None, valid_x=None, valid_y=[14, 15]) > 10:
@@ -231,6 +232,35 @@ class AlgoStrategy(gamelib.AlgoCore):
                 gamelib.debug_write("Got scored on at: {}".format(location))
                 self.scored_on_locations.append(location)
                 gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
+
+    def remove_all():
+        for index in range(HALF_ARENA):
+            y
+            if(contains_stationary_unit()):
+                remove_unit(index)
+        
+    def remove_all(self, game_state):
+        self.enemy_defences = []
+        game_map = game_state.game_map
+
+        left_pointer = 0
+        right_pointer = 27
+
+        row_pointer = 13
+        bottom_row = 13
+
+        for y in range (row_pointer):
+            y_coord = bottom_row - y
+
+            for x in range (right_pointer - left_pointer):
+
+                x_coord = x + y
+
+                if(contains_stationary_unit()):
+                    remove_unit(x_coord, y_coord)
+            
+            left_pointer += 1
+            right_pointer -= 1
 
 
 if __name__ == "__main__":
