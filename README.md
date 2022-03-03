@@ -1,5 +1,5 @@
-# Terminal Algo 
+# TERMINAL ALGO
 
-For Terminal Live Spring 2022 - West Coast Region
+FOR TERMINAL LIVE SPRING 2022 - WEST COAST COMPETITION
 
 # SID, JOHN, JACOB
